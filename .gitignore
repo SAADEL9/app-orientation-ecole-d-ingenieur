@@ -1,0 +1,84 @@
+# ============================================
+# SECRETS (never commit these)
+# ============================================
+private.pem
+*.pem
+!public.pem
+*.key
+*.p12
+*.jks
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.properties
+application-secret*.yml
+
+# ============================================
+# Java / Maven
+# ============================================
+target/
+*.class
+*.jar
+*.war
+*.log
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+dependency-reduced-pom.xml
+
+# ============================================
+# Spring Boot
+# ============================================
+HELP.md
+spring-boot-*.log
+
+# ============================================
+# Angular / Node
+# ============================================
+node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/out-tsc/
+frontend/coverage/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ============================================
+# Python (coach-service, later)
+# ============================================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# ============================================
+# Docker (local data only)
+# ============================================
+pgdata/
+qdrant_storage/
+
+# ============================================
+# IDEs and editors
+# ============================================
+.idea/
+*.iml
+*.iws
+.vscode/
+!.vscode/extensions.json
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated/
+.sts4-cache/
+nbproject/
+
+# ============================================
+# OS files
+# ============================================
+.DS_Store
+Thumbs.db
+desktop.ini
